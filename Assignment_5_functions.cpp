@@ -14,20 +14,6 @@ void inputData(Profile a[], int& n) {
 		cin >> a[i].gpa;
 	}
 }
-void inputData(Profile a[], int& n) {
-	cout << "Input Profile array, first is the numbers of elements: ";
-	cin >> n;
-	for (int i = 0; i < n; i++) {
-		cout << "Student " << i + 1<< ": ";
-		cout << "ID: ";
-		cin >> a[i].id;
-		cout << "Name: ";
-		cin.ignore();
-		cin.getline(a[i].name, 100);
-		cout << "GPA: ";
-		cin >> a[i].gpa;
-	}
-}
 void writeData(ofstream& ifs, Profile a[], int n) {
 	ifs << n << endl;
 	for (int i = 0; i < n; i++) {
