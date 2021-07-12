@@ -51,4 +51,5 @@ int findMax(Profile a[], int n) {
 	}
 
 	return d;
+	/*gvghfcghc*/
 }
